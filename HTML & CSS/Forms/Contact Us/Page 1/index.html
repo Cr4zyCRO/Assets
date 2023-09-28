@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="card">
+      <form action="" method="get">
+        <h1>Contact Us</h1>
+
+        <label class="input">
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            class="input__field"
+            placeholder=" "
+          />
+          <span class="input__label">Full Name</span>
+        </label>
+
+        <label class="input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input__field"
+            placeholder=" "
+          />
+          <span class="input__label">E-mail</span>
+        </label>
+
+        <label class="input">
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            class="input__field"
+            placeholder=" "
+          />
+          <span class="input__label">Telephone</span>
+        </label>
+
+        <label class="input">
+          <select name="service" id="service-select" class="input__field">
+            <option
+              value=" "
+              aria-placeholder=" "
+              selected
+              disabled
+              hidden
+            ></option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <span class="input__label">Select an option</span>
+        </label>
+
+        <label>
+          <h3>WHAT TYPE OF PRODUCTS DO YOU SELL</h3>
+          <ul>
+            <li>
+              <input type="radio" name="Value" id="radio-select-1" />
+              <label for="radio-select-1">Option 1</label>
+              <div class="check"></div>
+            </li>
+            <li>
+              <input type="radio" name="Value" id="radio-select-2" />
+              <label for="radio-select-2">Option 2</label>
+              <div class="check"></div>
+            </li>
+            <li>
+              <input type="radio" name="Value" id="radio-select-3" />
+              <label for="radio-select-3">Option 3</label>
+              <div class="check"></div>
+            </li>
+          </ul>
+        </label>
+
+        <label class="range-input">
+          <h3>SALARY</h3>
+          <p>Use slider or enter Min and Max price</p>
+          <div class="price-input">
+            <p class="range-value feild">
+              <span>Min</span>
+              <input type="number" class="input-min" value="1500" />
+            </p>
+            <p class="range-value feild">
+              <span>Max</span>
+              <input type="number" class="input-max" value="8500" />
+            </p>
+          </div>
+          <div id="slider-range" class="range-bar">
+            <div class="progress"></div>
+          </div>
+          <div class="range-slider">
+            <input
+              type="range"
+              class="range-min"
+              min="0"
+              max="10000"
+              value="1500"
+              step="100"
+            />
+            <input
+              type="range"
+              class="range-max"
+              min="0"
+              max="10000"
+              value="8500"
+              step="100"
+            />
+          </div>
+        </label>
+
+        <label class="input">
+          <textarea
+            class="input__field"
+            placeholder=" "
+            cols="20"
+            rows="10"
+          ></textarea>
+          <span class="input__label">MESSAGE</span>
+        </label>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
